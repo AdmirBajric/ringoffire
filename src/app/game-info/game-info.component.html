@@ -1,8 +1,8 @@
 <mat-card>
-  <mat-card-header>{{ card ? title : "Please pick a card" }}</mat-card-header>
+  <mat-card-header>{{
+    card ? title : "Please add two players"
+  }}</mat-card-header>
   <mat-card-content>{{
-    card
-      ? description
-      : "Please click on the card stack to select the next card"
+    card ? description : "Please click on the card stack to create two players"
   }}</mat-card-content>
 </mat-card>

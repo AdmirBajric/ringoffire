@@ -1,0 +1,35 @@
+.player {
+  position: relative;
+  width: 25rem;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  border: 0.1rem solid #cd721e;
+  border-left-style: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  opacity: 0.2;
+
+  span {
+    position: absolute;
+    left: 6rem;
+    font-size: 3.2rem;
+    margin-left: 1.6rem;
+    color: white;
+  }
+
+  img {
+    position: absolute;
+    left: -4rem;
+    width: 7rem;
+    height: 7rem;
+    border: 0.1rem solid #cd721e;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 2;
+  }
+}
+
+.player-active {
+  opacity: 1;
+}

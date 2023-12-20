@@ -1,8 +1,65 @@
 #dialog {
   width: 30rem;
-  height: 30rem;
+  height: 32rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#error-msg {
+  color: rgb(156, 40, 40);
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.show-hide-error {
+  opacity: 1 !important;
+}
+
+@media only screen and (max-width: 450px) {
+  #dialog {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .mdc-dialog,
+  .mdc-dialog__content {
+    padding: 10px 10px 10px 10px !important;
+  }
+
+  .mat-mdc-form-field {
+    display: flex !important;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #dialog {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #dialog {
+    width: 37rem;
+    height: 45rem;
+  }
+
+  .mdc-dialog,
+  .mdc-dialog__content {
+    padding: 0px 0px 0px 0px !important;
+  }
+
+  .mat-mdc-dialog-container,
+  .mdc-dialog__content {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  #dialog {
+    width: 37rem;
+    height: 45rem;
+  }
 }

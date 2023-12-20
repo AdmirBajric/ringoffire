@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
 
   .card-stack {
     position: relative;
@@ -20,6 +21,7 @@
       border-radius: 1.5rem;
       border: 0.1rem solid rgba(245, 163, 10, 0.15);
       cursor: pointer;
+      z-index: 3;
     }
   }
 }
@@ -67,7 +69,7 @@
 .btn-add {
   position: absolute;
   right: 3.2rem;
-  bottom: 2rem;
+  bottom: 4rem;
 }
 
 .pin-bottom {
@@ -75,4 +77,74 @@
   bottom: 3rem;
   left: 12rem;
   right: 12rem;
+}
+
+.my-class {
+  background-color: rgb(126, 126, 123);
+}
+
+@media only screen and (max-width: 920px) {
+  .btn-add {
+    position: absolute;
+    left: 5rem;
+    bottom: 13rem;
+  }
+
+  .pin-bottom {
+    position: absolute;
+    bottom: 3rem;
+    left: 5rem;
+    right: 5rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .btn-add {
+    position: absolute;
+    left: 5rem;
+    bottom: 15rem;
+  }
+  .card-stack {
+    position: absolute;
+    left: -20rem;
+    top: 3rem;
+    width: 25rem;
+    height: 35rem;
+
+    .played-card,
+    .pick-card {
+      left: 29rem;
+      top: -9rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .card-stack {
+    position: absolute;
+    left: -15rem;
+    top: 3rem;
+    width: 25rem;
+    height: 35rem;
+
+    .played-card,
+    .pick-card {
+      left: 29rem;
+      top: -9rem;
+    }
+  }
+
+  .btn-add {
+    position: absolute;
+    left: 5rem;
+    bottom: 20rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .btn-add {
+    position: absolute;
+    left: 5rem;
+    bottom: 26rem;
+  }
 }

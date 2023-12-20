@@ -60,6 +60,9 @@ export class GameInfoComponent implements OnInit, OnChanges {
 
   title = '';
   description = '';
+  welcomeTitle = 'Please click a card!';
+  welcomeDescription =
+    'Please add two players first and click the card to start the game!';
 
   @Input() card!: string;
 

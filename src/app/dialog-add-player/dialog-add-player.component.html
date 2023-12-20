@@ -7,9 +7,16 @@
       <input matInput [(ngModel)]="name" />
     </mat-form-field>
   </div>
+  <div [class.show-hide-error]="name.length > 10" id="error-msg">
+    Use no more than 10 letters.
+  </div>
   <div mat-dialog-actions>
     <button mat-button (click)="onNoClick()">No Thanks</button>
-    <button mat-button [disabled]="name.length == 0" [mat-dialog-close]="name">
+    <button
+      mat-button
+      [disabled]="name.length == 0 || name.length > 10"
+      [mat-dialog-close]="name"
+    >
       Ok
     </button>
   </div>
